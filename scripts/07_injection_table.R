@@ -1,4 +1,5 @@
-## 
+## This script creates an injection table giving the predicted amount of
+## insulin to inject based on glucose intake and desired change in glycemia.
 
 rm(list = ls())
 
@@ -15,9 +16,9 @@ data <- expand_grid(
 )
 
 # Load the parameters
-pars1.5 <- read_csv("data/parameters_1_5.csv")
-pars2.0 <- read_csv("data/parameters_2_0.csv")
-pars3.0 <- read_csv("data/parameters_3_0.csv")
+pars1.5 <- read_csv("data/parameters/parameters_1_5.csv")
+pars2.0 <- read_csv("data/parameters/parameters_2_0.csv")
+pars3.0 <- read_csv("data/parameters/parameters_3_0.csv")
 
 # Compute insulin needed
 data <- data %>% 

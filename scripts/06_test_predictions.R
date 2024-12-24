@@ -7,9 +7,9 @@ library(tidyverse)
 source("scripts/functions/Prediction.R")
 
 # Read parameters
-pars1 <- read_csv("data/parameters_1_5.csv")
-pars2 <- read_csv("data/parameters_2_0.csv")
-pars3 <- read_csv("data/parameters_3_0.csv")
+pars1 <- read_csv("data/parameters/parameters_1_5.csv")
+pars2 <- read_csv("data/parameters/parameters_2_0.csv")
+pars3 <- read_csv("data/parameters/parameters_3_0.csv")
 
 # Try out the prediction
 predict_insulin(glucose = 50, pars = pars1)

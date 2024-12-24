@@ -12,9 +12,9 @@ source("scripts/functions/rm_axis.R")
 source("scripts/functions/rm_strips.R")
 
 # Read the data
-data1 <- read_csv("data/chunks_1_5.csv")
-data2 <- read_csv("data/chunks_2_0.csv")
-data3 <- read_csv("data/chunks_3_0.csv")
+data1 <- read_csv("data/chunks/chunks_1_5.csv")
+data2 <- read_csv("data/chunks/chunks_2_0.csv")
+data3 <- read_csv("data/chunks/chunks_3_0.csv")
 
 # Make plots
 plots <- map(list(data1, data2, data3), plot_all_binary, common_y = TRUE)

@@ -17,6 +17,6 @@ d2 <- create_dataset(data, threshold = 2)
 d3 <- create_dataset(data, threshold = 3)
 
 # Save
-write_csv(d1, "data/chunks_1_5.csv")
-write_csv(d2, "data/chunks_2_0.csv")
-write_csv(d3, "data/chunks_3_0.csv")
+write_csv(d1, "data/chunks/chunks_1_5.csv")
+write_csv(d2, "data/chunks/chunks_2_0.csv")
+write_csv(d3, "data/chunks/chunks_3_0.csv")

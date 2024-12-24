@@ -13,9 +13,9 @@ source("scripts/functions/rm_strips.R")
 theme_set(theme_classic())
 
 # Read data
-data1 <- read_csv("data/chunks_1_5.csv")
-data2 <- read_csv("data/chunks_2_0.csv")
-data3 <- read_csv("data/chunks_3_0.csv")
+data1 <- read_csv("data/chunks/chunks_1_5.csv")
+data2 <- read_csv("data/chunks/chunks_2_0.csv")
+data3 <- read_csv("data/chunks/chunks_3_0.csv")
 
 # Combine
 data <- tibble(Data = list(data1, data2, data3), Threshold = c(1.5, 2, 3))

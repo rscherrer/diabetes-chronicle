@@ -11,9 +11,9 @@ source("scripts/functions/Plotting.R")
 source("scripts/functions/Processing.R")
 
 # Read the data
-data1 <- read_csv("data/chunks_1_5.csv")
-data2 <- read_csv("data/chunks_2_0.csv")
-data3 <- read_csv("data/chunks_3_0.csv")
+data1 <- read_csv("data/chunks/chunks_1_5.csv")
+data2 <- read_csv("data/chunks/chunks_2_0.csv")
+data3 <- read_csv("data/chunks/chunks_3_0.csv")
 
 # Function to perform the pre-analysis
 FUN <- function(data) {
