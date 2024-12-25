@@ -1,11 +1,11 @@
 # Hard-coded parameters at threshold one hour and a half
-get_pars_1.5 <- function() read_csv("data/parameters_1_5.csv")
+get_pars_1.5 <- function() read_csv("data/parameters/parameters_1_5.csv")
 
 # Hard-coded parameters at threshold two hours
-get_pars_2.0 <- function() read_csv("data/parameters_2_0.csv")
+get_pars_2.0 <- function() read_csv("data/parameters/parameters_2_0.csv")
 
 # Hard-coded parameters at threshold three hours
-get_pars_3.0 <- function() read_csv("data/parameters_3_0.csv")
+get_pars_3.0 <- function() read_csv("data/parameters/parameters_3_0.csv")
 
 # Function to predict how much insulin to inject
 predict_insulin <- function(

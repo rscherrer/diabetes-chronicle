@@ -22,7 +22,7 @@ compute_parameters <- function(data) {
   
   # Deduce conversion parameters
   betas <- intercepts
-  alphas <- slopes / intercepts
+  alphas <- -slopes / intercepts
   
   # Make parameters into a table
   parameters <- tibble(

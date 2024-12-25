@@ -11,6 +11,8 @@ source("scripts/functions/Plotting.R")
 source("scripts/functions/rm_axis.R")
 source("scripts/functions/rm_strips.R")
 
+theme_set(theme_classic())
+
 # Read the data
 data1 <- read_csv("data/chunks/chunks_1_5.csv")
 data2 <- read_csv("data/chunks/chunks_2_0.csv")
@@ -36,4 +38,4 @@ for (i in seq(plots[[2]][[2]])) plots[[2]][[2]][[i]] <- plots[[2]][[2]][[i]] + t
 P <- wrap_plots(plots, nrow = 1)
 
 # Save
-ggsave("plots/overview_binary.png", P, width = 15, height = 10, dpi = 300)
+ggsave("plots/overview_binary.png", P, width = 10, height = 10, dpi = 300)

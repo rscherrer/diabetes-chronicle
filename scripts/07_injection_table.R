@@ -4,8 +4,11 @@
 rm(list = ls())
 
 library(tidyverse)
+library(knitr)
 
 source("scripts/functions/Prediction.R")
+
+theme_set(theme_classic())
 
 # Create a table
 data <- expand_grid(
@@ -75,3 +78,13 @@ injection_table <- data %>%
 
 # Save
 write_csv(injection_table, "data/injection_table.csv")
+
+# Numbers of digits
+n_digits <- rep(1, ncol(injection_table))
+n_digits[1] <- 0
+
+# Make a LaTeX table
+injection_table_tex <- kable(injection_table, format = "latex", booktabs = TRUE, linesep = "", digits = n_digits)
+
+# Save
+cat(injection_table_tex, file = "tex/injection_table.tex")
